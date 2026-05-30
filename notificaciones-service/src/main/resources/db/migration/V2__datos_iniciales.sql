@@ -1,0 +1,6 @@
+INSERT INTO notificaciones (paciente_id, mensaje, fecha_envio, tipo) VALUES
+                                                                         (1, 'Recordatorio: tiene una cita de Cardiología mañana a las 10:00 AM', '2026-05-19 09:00:00', 'RECORDATORIO_CITA'),
+                                                                         (2, 'Su receta médica de Sumatriptán ha sido emitida. Puede retirarla en farmacia.', '2026-05-21 11:00:00', 'EMISION_RECETA'),
+                                                                         (3, 'Recordatorio: control pediátrico programado para el día 22 de mayo', '2026-05-21 08:00:00', 'RECORDATORIO_CITA'),
+                                                                         (4, 'Su pago de $35.000 por consulta de Traumatología fue procesado exitosamente', '2026-05-23 15:00:00', 'CONFIRMACION_PAGO'),
+                                                                         (5, 'Tiene un pago pendiente de $30.000 correspondiente a su consulta dermatológica', '2026-05-24 10:00:00', 'AVISO_PAGO_PENDIENTE');
