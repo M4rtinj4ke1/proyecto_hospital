@@ -9,7 +9,8 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 
 @AllArgsConstructor @NoArgsConstructor @Data
-@Entity @Table(name = "historiales")
+@Entity
+@Table(name = "historial")
 public class Historial {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,0 +1,50 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: pacientes-service
+              uri: lb://pacientes-service
+              predicates:
+                - Path=/api/pacientes/**
+            - id: medicos-service
+              uri: lb://medicos-service
+              predicates:
+                - Path=/api/medicos/**
+            - id: citas-service
+              uri: lb://citas-service
+              predicates:
+                - Path=/api/citas/**
+            - id: especialidades-service
+              uri: lb://especialidades-service
+              predicates:
+                - Path=/api/especialidades/**
+            - id: historial-service
+              uri: lb://historial-service
+              predicates:
+                - Path=/api/historial/**
+            - id: recetas-service
+              uri: lb://recetas-service
+              predicates:
+                - Path=/api/recetas/**
+            - id: pagos-service
+              uri: lb://pagos-service
+              predicates:
+                - Path=/api/pagos/**
+            - id: notificaciones-service
+              uri: lb://notificaciones-service
+              predicates:
+                - Path=/api/notificaciones/**

@@ -5,6 +5,7 @@ import cl.duoc.historial_service.clients.PacienteFeign;
 import cl.duoc.historial_service.dto.HistorialDTO;
 import cl.duoc.historial_service.dto.MedicoDTO;
 import cl.duoc.historial_service.dto.PacienteDTO;
+import cl.duoc.historial_service.exception.ResourceNotFoundException;
 import cl.duoc.historial_service.mapper.HistorialMapper;
 import cl.duoc.historial_service.model.Historial;
 import cl.duoc.historial_service.repository.HistorialRepository;
@@ -33,7 +34,7 @@ public class HistorialService {
         try {
             return pacienteFeign.findById(id);
         } catch (Exception e) {
-            return new PacienteDTO(id, "No disponible", "", "", null, "");
+            throw new ResourceNotFoundException("Paciente no encontrado con ID: " + id);
         }
     }
 
@@ -41,7 +42,7 @@ public class HistorialService {
         try {
             return medicoFeign.findById(id);
         } catch (Exception e) {
-            return new MedicoDTO(id, "No disponible", "", "", "", null);
+            throw new ResourceNotFoundException("Médico no encontrado con ID: " + id);
         }
     }
 
@@ -53,18 +54,24 @@ public class HistorialService {
 
     public HistorialDTO findById(Long id) {
         Historial h = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Historial no encontrado con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Historial no encontrado con ID: " + id));
         return mapper.toDTO(h, obtenerPaciente(h.getPacienteId()), obtenerMedico(h.getMedicoId()));
     }
 
     public HistorialDTO save(HistorialDTO dto) {
+        obtenerPaciente(dto.getPaciente().getId());
+        obtenerMedico(dto.getMedico().getId());
+
         Historial saved = repository.save(mapper.toEntity(dto));
         return findById(saved.getId());
     }
 
     public HistorialDTO update(Long id, HistorialDTO dto) {
         repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Historial no encontrado con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Historial no encontrado con ID: " + id));
+        obtenerPaciente(dto.getPaciente().getId());
+        obtenerMedico(dto.getMedico().getId());
+
         dto.setId(id);
         Historial updated = repository.save(mapper.toEntity(dto));
         return findById(updated.getId());
@@ -72,7 +79,7 @@ public class HistorialService {
 
     public void deleteById(Long id) {
         repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Historial no encontrado con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Historial no encontrado con ID: " + id));
         repository.deleteById(id);
     }
 }

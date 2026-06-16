@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:A:/proyecto_hospital/config-microservicio/config-microservicios
+
+server:
+  port: 8888

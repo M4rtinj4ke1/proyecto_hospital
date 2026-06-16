@@ -1,6 +1,4 @@
-INSERT INTO especialidades (nombre, descripcion) VALUES
-                                                     ('Cardiología', 'Especialidad del corazón y sistema cardiovascular'),
-                                                     ('Neurología', 'Especialidad del sistema nervioso central y periférico'),
-                                                     ('Pediatría', 'Atención médica integral para niños y adolescentes'),
-                                                     ('Traumatología', 'Diagnóstico y tratamiento de lesiones musculoesqueléticas'),
-                                                     ('Dermatología', 'Enfermedades de la piel, cabello y uñas');
+INSERT INTO historial (paciente_id, medico_id, fecha, diagnostico, tratamiento) VALUES
+                                                                                    (1, 1, '2024-01-15', 'Hipertensión arterial', 'Enalapril 10mg diario'),
+                                                                                    (2, 2, '2024-02-20', 'Migraña crónica', 'Sumatriptán 50mg según necesidad'),
+                                                                                    (3, 1, '2024-03-10', 'Fractura de tobillo', 'Inmovilización y fisioterapia');

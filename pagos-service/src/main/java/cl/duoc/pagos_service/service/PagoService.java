@@ -3,6 +3,7 @@ package cl.duoc.pagos_service.service;
 import cl.duoc.pagos_service.clients.CitaFeign;
 import cl.duoc.pagos_service.dto.CitaDTO;
 import cl.duoc.pagos_service.dto.PagoDTO;
+import cl.duoc.pagos_service.exception.ResourceNotFoundException;
 import cl.duoc.pagos_service.mapper.PagoMapper;
 import cl.duoc.pagos_service.model.Pago;
 import cl.duoc.pagos_service.repository.PagoRepository;
@@ -28,7 +29,7 @@ public class PagoService {
         try {
             return citaFeign.findById(id);
         } catch (Exception e) {
-            return new CitaDTO(id, null, "No disponible", null);
+            throw new ResourceNotFoundException("Cita no encontrada con ID: " + id);
         }
     }
 
@@ -40,18 +41,23 @@ public class PagoService {
 
     public PagoDTO findById(Long id) {
         Pago p = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Pago no encontrado con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Pago no encontrado con ID: " + id));
         return mapper.toDTO(p, obtenerCita(p.getCitaId()));
     }
 
     public PagoDTO save(PagoDTO dto) {
+        obtenerCita(dto.getCita().getId());
+
         Pago saved = repository.save(mapper.toEntity(dto));
         return findById(saved.getId());
     }
 
     public PagoDTO update(Long id, PagoDTO dto) {
         repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Pago no encontrado con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Pago no encontrado con ID: " + id));
+
+        obtenerCita(dto.getCita().getId());
+
         dto.setId(id);
         Pago updated = repository.save(mapper.toEntity(dto));
         return findById(updated.getId());
@@ -59,7 +65,7 @@ public class PagoService {
 
     public void deleteById(Long id) {
         repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Pago no encontrado con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Pago no encontrado con ID: " + id));
         repository.deleteById(id);
     }
 }
