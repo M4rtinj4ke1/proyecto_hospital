@@ -3,6 +3,7 @@ package cl.duoc.notificaciones_service.service;
 import cl.duoc.notificaciones_service.clients.PacienteFeign;
 import cl.duoc.notificaciones_service.dto.NotificacionDTO;
 import cl.duoc.notificaciones_service.dto.PacienteDTO;
+import cl.duoc.notificaciones_service.exception.ResourceNotFoundException;
 import cl.duoc.notificaciones_service.mapper.NotificacionMapper;
 import cl.duoc.notificaciones_service.model.Notificacion;
 import cl.duoc.notificaciones_service.repository.NotificacionRepository;
@@ -29,13 +30,13 @@ public class NotificacionService {
         try {
             return pacienteFeign.findById(id);
         } catch (Exception e) {
-            return new PacienteDTO(id, "No disponible", "", "", null, "");
+            throw new ResourceNotFoundException("Paciente no encontrado con ID: " + id);
         }
     }
 
     private void simularEnvio(Notificacion n, PacienteDTO paciente) {
         System.out.println("//////////////////////////////////////////////////////");
-        System.out.println("📧 SIMULACIÓN DE ENVÍO DE NOTIFICACIÓN");
+        System.out.println("SIMULACIÓN DE ENVÍO DE NOTIFICACIÓN");
         System.out.println("Tipo     : " + n.getTipo());
         System.out.println("Para     : " + paciente.getNombre() + " " + paciente.getApellidos());
         System.out.println("Email    : " + paciente.getEmail());
@@ -52,11 +53,13 @@ public class NotificacionService {
 
     public NotificacionDTO findById(Long id) {
         Notificacion n = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Notificación no encontrada con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Notificación no encontrada con ID: " + id));
         return mapper.toDTO(n, obtenerPaciente(n.getPacienteId()));
     }
 
     public NotificacionDTO save(NotificacionDTO dto) {
+        obtenerPaciente(dto.getPaciente().getId());
+
         Notificacion n = mapper.toEntity(dto);
         n.setFechaEnvio(LocalDateTime.now());
         Notificacion saved = repository.save(n);
@@ -67,7 +70,10 @@ public class NotificacionService {
 
     public NotificacionDTO update(Long id, NotificacionDTO dto) {
         repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Notificación no encontrada con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Notificación no encontrada con ID: " + id));
+
+        obtenerPaciente(dto.getPaciente().getId());
+
         dto.setId(id);
         Notificacion updated = repository.save(mapper.toEntity(dto));
         return mapper.toDTO(updated, obtenerPaciente(updated.getPacienteId()));
@@ -75,7 +81,7 @@ public class NotificacionService {
 
     public void deleteById(Long id) {
         repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Notificación no encontrada con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Notificación no encontrada con ID: " + id));
         repository.deleteById(id);
     }
 }

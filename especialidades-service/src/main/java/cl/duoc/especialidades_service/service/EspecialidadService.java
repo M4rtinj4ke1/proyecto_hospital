@@ -2,6 +2,7 @@ package cl.duoc.especialidades_service.service;
 
 import cl.duoc.especialidades_service.Repository.EspecialidadRepository;
 import cl.duoc.especialidades_service.dto.EspecialidadDTO;
+import cl.duoc.especialidades_service.exception.ResourceNotFoundException;
 import cl.duoc.especialidades_service.mapper.EspecialidadMapper;
 import cl.duoc.especialidades_service.model.Especialidad;
 import org.springframework.stereotype.Service;
@@ -28,7 +29,7 @@ public class EspecialidadService {
 
     public EspecialidadDTO findById(Long id) {
         Especialidad e = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Especialidad no encontrada con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Especialidad no encontrada con ID: " + id));
         return mapper.toDTO(e);
     }
 
@@ -39,7 +40,7 @@ public class EspecialidadService {
 
     public EspecialidadDTO update(Long id, EspecialidadDTO dto) {
         repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Especialidad no encontrada con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Especialidad no encontrada con ID: " + id));
         dto.setId(id);
         Especialidad updated = repository.save(mapper.toEntity(dto));
         return mapper.toDTO(updated);
@@ -47,7 +48,7 @@ public class EspecialidadService {
 
     public void deleteById(Long id) {
         repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Especialidad no encontrada con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Especialidad no encontrada con ID: " + id));
         repository.deleteById(id);
     }
 }
