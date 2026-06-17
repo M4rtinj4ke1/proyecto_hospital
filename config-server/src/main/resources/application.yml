@@ -7,7 +7,12 @@ spring:
     config:
       server:
         native:
-          search-locations: file:A:/proyecto_hospital/config-microservicio/config-microservicios
+          search-locations: file:/config-microservicios
 
 server:
   port: 8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://eureka:8761/eureka/}

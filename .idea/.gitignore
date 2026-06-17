@@ -1,0 +1,15 @@
+# Default ignored files
+target/
+.mvn/wrapper/maven-wrapper.jar
+.idea/
+*.iml
+.vscode/
+bin/
+build/
+.settings/
+.project
+.classpath
+
+# Excluir archivos de base de datos o logs si los hubiera
+*.log
+*.tmp

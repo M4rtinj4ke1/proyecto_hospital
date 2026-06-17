@@ -1,7 +1,7 @@
 package cl.duoc.pagos_service.exception;
 
-import cl.duoc.recetas_service.exception.ErrorResponse;
-import cl.duoc.recetas_service.exception.ResourceNotFoundException;
+import cl.duoc.pagos_service.exception.ErrorResponse;
+import cl.duoc.pagos_service.exception.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
