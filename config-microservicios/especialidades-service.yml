@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: citas-service
+    name: especialidades-service
 
   datasource:
     url: ${SPRING_DATASOURCE_URL}
@@ -31,3 +31,7 @@ eureka:
   client:
     service-url:
       defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

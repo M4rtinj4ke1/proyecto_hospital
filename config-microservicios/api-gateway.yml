@@ -1,0 +1,95 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          trusted-proxies: .*
+          routes:
+            - id: pacientes-service
+              uri: lb://pacientes-service
+              predicates:
+                - Path=/api/pacientes/**, /v3/api-docs/pacientes
+              filters:
+                - RewritePath=/v3/api-docs/pacientes, /v3/api-docs
+
+            - id: medicos-service
+              uri: lb://medicos-service
+              predicates:
+                - Path=/api/medicos/**, /v3/api-docs/medicos
+              filters:
+                - RewritePath=/v3/api-docs/medicos, /v3/api-docs
+
+            - id: citas-service
+              uri: lb://citas-service
+              predicates:
+                - Path=/api/citas/**, /v3/api-docs/citas
+              filters:
+                - RewritePath=/v3/api-docs/citas, /v3/api-docs
+
+            - id: especialidades-service
+              uri: lb://especialidades-service
+              predicates:
+                - Path=/api/especialidades/**, /v3/api-docs/especialidades
+              filters:
+                - RewritePath=/v3/api-docs/especialidades, /v3/api-docs
+
+            - id: historial-service
+              uri: lb://historial-service
+              predicates:
+                - Path=/api/historiales/**, /v3/api-docs/historial
+              filters:
+                - RewritePath=/v3/api-docs/historial, /v3/api-docs
+
+            - id: recetas-service
+              uri: lb://recetas-service
+              predicates:
+                - Path=/api/recetas/**, /v3/api-docs/recetas
+              filters:
+                - RewritePath=/v3/api-docs/recetas, /v3/api-docs
+
+            - id: pagos-service
+              uri: lb://pagos-service
+              predicates:
+                - Path=/api/pagos/**, /v3/api-docs/pagos
+              filters:
+                - RewritePath=/v3/api-docs/pagos, /v3/api-docs
+
+            - id: notificaciones-service
+              uri: lb://notificaciones-service
+              predicates:
+                - Path=/api/notificaciones/**, /v3/api-docs/notificaciones
+              filters:
+                - RewritePath=/v3/api-docs/notificaciones, /v3/api-docs
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    urls:
+      - name: Pacientes
+        url: /v3/api-docs/pacientes
+      - name: Medicos
+        url: /v3/api-docs/medicos
+      - name: Citas
+        url: /v3/api-docs/citas
+      - name: Especialidades
+        url: /v3/api-docs/especialidades
+      - name: Historial
+        url: /v3/api-docs/historial
+      - name: Recetas
+        url: /v3/api-docs/recetas
+      - name: Pagos
+        url: /v3/api-docs/pagos
+      - name: Notificaciones
+        url: /v3/api-docs/notificaciones
+  api-docs:
+    enabled: true
+  webjars:
+    prefix: ""
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
