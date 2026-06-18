@@ -44,7 +44,7 @@ public class PacienteController {
             description = "Retorna los datos de un paciente específico a partir de su identificador único."
     )
     @ApiResponses({
-            @ApiResponse(responseCode = "200", description = "Paciente encontrado",
+            @ApiResponse(responseCode= "200", description = "Paciente encontrado",
                     content = @Content(schema = @Schema(implementation = PacienteDTO.class))),
             @ApiResponse(responseCode = "404", description = "No existe un paciente con el ID proporcionado",
                     content = @Content(schema = @Schema(implementation = ErrorResponse.class)))

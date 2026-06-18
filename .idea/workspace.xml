@@ -5,40 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d5fa8c3-f5b1-4ff9-bcd6-c098d77c7f43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/citas-service/src/main/java/cl/duoc/citas_service/config/FlywayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/citas-service/src/main/java/cl/duoc/citas_service/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-microservicios/api-gateway.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/especialidades-service/src/main/java/cl/duoc/especialidades_service/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medicos-service/src/main/java/cl/duoc/medicos_service/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notificaciones-service/src/main/java/cl/duoc/notificaciones_service/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pacientes-service/src/main/java/cl/duoc/pacientes_service/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagos-service/src/main/java/cl/duoc/pagos_service/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recetas-service/src/main/java/cl/duoc/recetas_service/config/OpenApiConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/citas-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/citas-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/citas-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/citas-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-microservicio/config-microservicios/api-gateway.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-microservicio/config-microservicios/citas-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-microservicios/citas-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-microservicio/config-microservicios/especialidades-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-microservicios/especialidades-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-microservicio/config-microservicios/historial-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-microservicios/historial-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-microservicio/config-microservicios/medicos-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-microservicios/medicos-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-microservicio/config-microservicios/notificaciones-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-microservicios/notificaciones-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-microservicio/config-microservicios/pacientes-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-microservicios/pacientes-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-microservicio/config-microservicios/pagos-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-microservicios/pagos-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-microservicio/config-microservicios/recetas-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-microservicios/recetas-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/especialidades-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/especialidades-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/historial-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/historial-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medicos-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/medicos-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notificaciones-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pacientes-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/citas-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/citas-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/citas-service/src/main/java/cl/duoc/citas_service/CitasServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/citas-service/src/main/java/cl/duoc/citas_service/CitasServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/especialidades-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/especialidades-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/especialidades-service/src/main/java/cl/duoc/especialidades_service/EspecialidadesServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/especialidades-service/src/main/java/cl/duoc/especialidades_service/EspecialidadesServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/historial-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/historial-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/HistorialServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/HistorialServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicos-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/medicos-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicos-service/src/main/java/cl/duoc/medicos_service/MedicosServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/medicos-service/src/main/java/cl/duoc/medicos_service/MedicosServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificaciones-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/notificaciones-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificaciones-service/src/main/java/cl/duoc/notificaciones_service/NotificacionesServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notificaciones-service/src/main/java/cl/duoc/notificaciones_service/NotificacionesServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pacientes-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pacientes-service/src/main/java/cl/duoc/pacientes_service/PacientesServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes-service/src/main/java/cl/duoc/pacientes_service/PacientesServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pacientes-service/src/main/java/cl/duoc/pacientes_service/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes-service/src/main/java/cl/duoc/pacientes_service/controller/PacienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagos-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pagos-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recetas-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recetas-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagos-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/pagos-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagos-service/src/main/java/cl/duoc/pagos_service/PagosServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pagos-service/src/main/java/cl/duoc/pagos_service/PagosServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recetas-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/recetas-service/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,14 +93,16 @@
     "Spring Boot.PagosServiceApplication.executor": "Run",
     "Spring Boot.RecetasServiceApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "A:/proyecto_hospital/recetas-service/src/main/java/cl/duoc/recetas_service",
+    "last_opened_file_path": "C:/Users/Duoc/Desktop/proyecto_hospital",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "build.tools"
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "build.tools",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -126,6 +116,16 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="A:\proyecto_hospital\config-microservicio" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -208,6 +208,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1d5fa8c3-f5b1-4ff9-bcd6-c098d77c7f43" name="Changes" comment="" />
@@ -215,6 +222,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1781225033973</updated>
+      <workItem from="1781794570405" duration="4095000" />
     </task>
     <servers />
   </component>
