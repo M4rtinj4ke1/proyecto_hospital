@@ -8,3 +8,28 @@ eureka:
     client:
         service-url:
             defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://eureka:8761/eureka/}
+
+springdoc:
+    api-docs:
+        enabled: true
+    swagger-ui:
+        path: /swagger-ui.html
+        urls:
+            - name: Pacientes
+              url: /v3/api-docs/pacientes
+            - name: Medicos
+              url: /v3/api-docs/medicos
+            - name: Citas
+              url: /v3/api-docs/citas
+            - name: Especialidades
+              url: /v3/api-docs/especialidades
+            - name: Historial
+              url: /v3/api-docs/historial
+            - name: Recetas
+              url: /v3/api-docs/recetas
+            - name: Pagos
+              url: /v3/api-docs/pagos
+            - name: Notificaciones
+              url: /v3/api-docs/notificaciones
+    webjars:
+        prefix: ""

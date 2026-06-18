@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: medicos-service
+    name: citas-service
 
   datasource:
     url: ${SPRING_DATASOURCE_URL}
@@ -13,6 +13,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+    defer-datasource-initialization: true
     show-sql: true
     properties:
       hibernate:
@@ -20,9 +21,10 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
 
   flyway:
-    enabled: true
+    enabled: false
     locations: classpath:db/migration
     baseline-on-migrate: true
+    repair-on-migrate: true
     url: ${SPRING_DATASOURCE_URL}
     user: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
@@ -31,3 +33,7 @@ eureka:
   client:
     service-url:
       defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

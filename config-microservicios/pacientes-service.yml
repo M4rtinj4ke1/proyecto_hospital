@@ -1,9 +1,10 @@
 server:
   port: 0
+  forward-headers-strategy: framework
 
 spring:
   application:
-    name: pagos-service
+    name: pacientes-service
 
   datasource:
     url: ${SPRING_DATASOURCE_URL}
@@ -26,7 +27,12 @@ spring:
     url: ${SPRING_DATASOURCE_URL}
     user: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
+
 eureka:
   client:
     service-url:
       defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

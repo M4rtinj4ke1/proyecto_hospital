@@ -38,7 +38,7 @@ services:
     environment:
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
     volumes:
-      - ./config-microservicio/config-microservicios:/config-microservicios
+      - ./config-microservicios:/config-microservicios
     restart: on-failure
 
   medicos-service:

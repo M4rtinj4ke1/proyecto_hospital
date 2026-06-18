@@ -6,9 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config-server" />
         <module name="api-gateway" />
+        <module name="config-server" />
         <module name="eureka-server" />
+      </profile>
+      <profile name="Annotation profile for historial-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="citas-service" />
+        <module name="historial-service" />
+        <module name="especialidades-service" />
       </profile>
       <profile name="Annotation profile for recetas-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -17,14 +28,11 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
+        <module name="recetas-service" />
         <module name="notificaciones-service" />
         <module name="pacientes-service" />
         <module name="medicos-service" />
         <module name="pagos-service" />
-        <module name="recetas-service" />
-        <module name="citas-service" />
-        <module name="historial-service" />
-        <module name="especialidades-service" />
       </profile>
     </annotationProcessing>
   </component>
