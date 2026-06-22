@@ -8,27 +8,23 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
+
+@SpringBootApplication
+@EnableFeignClients
 @OpenAPIDefinition(
 		info = @Info(
-				title = "Citas service API",
-				description = "DESCRIPTION " +
-						"API para que la gestion las citas del sistema hospitalario permitiendo" +
-						"- Registrar" +
-						"- Consultar" +
-						"- Actualizar" +
-						"- Eliminar",
-
-				version = "1.0.0",
+				title = "TITLE",
+				description = "DESCRIPTION",
+				version = "1.0.1",
 				contact = @Contact(
 						name =
-								"Martin Jaque"
+								"contact_name"
 						,
-						email = "ma.jaqueq@duocuc.cl"
+						email = "contact_email"
 				)
 		)
 )
-@SpringBootApplication
-@EnableFeignClients
+
 @EnableDiscoveryClient
 public class CitasServiceApplication {
 
