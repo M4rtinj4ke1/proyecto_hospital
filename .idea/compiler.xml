@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
-        <module name="config-server" />
         <module name="eureka-server" />
+        <module name="config-server" />
       </profile>
       <profile name="Annotation profile for recetas-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -27,6 +27,16 @@
         <module name="especialidades-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="especialidades-service (1)" target="1.5" />
+      <module name="eureka-server (1)" target="1.5" />
+      <module name="historial-service (1)" target="1.5" />
+      <module name="medicos-service (1)" target="1.5" />
+      <module name="notificaciones-service (1)" target="1.5" />
+      <module name="pacientes-service (1)" target="1.5" />
+      <module name="pagos-service (1)" target="1.5" />
+      <module name="recetas-service (1)" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
