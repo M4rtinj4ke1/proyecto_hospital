@@ -12,13 +12,15 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @OpenAPIDefinition(
 		info = @Info(
 				title = "Medicos service API",
-				description = "DESCRIPTION " +
-						"API para gestionar a los medicos del sistema hospitalario" +
-						"- Registrar" +
-						"- Consultar" +
-						"- Actualizar" +
-						"- Eliminar",
+				description = """
+        API para gestionar a los médicos del sistema hospitalario.
 
+        Permite:
+        - Registrar médicos
+        - Consultar médicos
+        - Actualizar médicos
+        - Eliminar médicos
+        """,
 				version = "1.0.0",
 				contact = @Contact(
 						name =

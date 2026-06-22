@@ -68,4 +68,13 @@ public class PagoService {
                 .orElseThrow(() -> new ResourceNotFoundException("Pago no encontrado con ID: " + id));
         repository.deleteById(id);
     }
+    public List<PagoDTO> findByCita(Long citaId) {
+        List<Pago> pagos = repository.findByCitaId(citaId);
+        if (pagos.isEmpty()) {
+            throw new ResourceNotFoundException("No se encontraron pagos para la cita con ID: " + citaId);
+        }
+        return pagos.stream()
+                .map(p -> mapper.toDTO(p, obtenerCita(p.getCitaId())))
+                .collect(Collectors.toList());
+    }
 }

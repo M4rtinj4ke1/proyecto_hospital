@@ -10,7 +10,7 @@
         <module name="eureka-server" />
         <module name="config-server" />
       </profile>
-      <profile name="Annotation profile for medicos-service" enabled="true">
+      <profile name="Annotation profile for recetas-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -18,8 +18,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="notificaciones-service" />
-        <module name="medicos-service" />
         <module name="pacientes-service" />
+        <module name="medicos-service" />
         <module name="pagos-service" />
         <module name="recetas-service" />
         <module name="citas-service" />

@@ -14,13 +14,15 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @OpenAPIDefinition(
 		info = @Info(
 				title = "Historial service API",
-		description = "DESCRIPTION " +
-				"API para ver el historial del hospital" +
-				"- Registrar" +
-				"- Consultar" +
-				"- Actualizar" +
-				"- Eliminar",
+				description = """
+        API para consultar el historial médico de los pacientes del sistema hospitalario.
 
+        Permite:
+        - Registrar historiales
+        - Consultar historiales
+        - Actualizar historiales
+        - Eliminar historiales
+        """,
 		version = "1.0.0",
 		contact = @Contact(
 				name =

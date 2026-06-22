@@ -11,7 +11,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @OpenAPIDefinition(
 		info = @Info(
-				title = "Notificiones service API",
+				title = "Notificaciones service API",
 				description = "DESCRIPTION " +
 						"API para notificar a los pacientes del sistema hospitalario" +
 						"- Registrar" +

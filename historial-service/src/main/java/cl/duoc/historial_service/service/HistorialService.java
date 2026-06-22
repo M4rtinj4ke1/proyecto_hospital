@@ -82,4 +82,23 @@ public class HistorialService {
                 .orElseThrow(() -> new ResourceNotFoundException("Historial no encontrado con ID: " + id));
         repository.deleteById(id);
     }
+    public List<HistorialDTO> findByPaciente(Long pacienteId) {
+        List<Historial> historiales = repository.findByPacienteId(pacienteId);
+        if (historiales.isEmpty()) {
+            throw new ResourceNotFoundException("No se encontraron historiales para el paciente con ID: " + pacienteId);
+        }
+        return historiales.stream().map(h ->
+                mapper.toDTO(h, obtenerPaciente(h.getPacienteId()), obtenerMedico(h.getMedicoId()))
+        ).collect(Collectors.toList());
+    }
+
+    public List<HistorialDTO> findByMedico(Long medicoId) {
+        List<Historial> historiales = repository.findByMedicoId(medicoId);
+        if (historiales.isEmpty()) {
+            throw new ResourceNotFoundException("No se encontraron historiales para el médico con ID: " + medicoId);
+        }
+        return historiales.stream().map(h ->
+                mapper.toDTO(h, obtenerPaciente(h.getPacienteId()), obtenerMedico(h.getMedicoId()))
+        ).collect(Collectors.toList());
+    }
 }
