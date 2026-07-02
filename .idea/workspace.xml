@@ -5,30 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d5fa8c3-f5b1-4ff9-bcd6-c098d77c7f43" name="Changes" comment="TEST PACIENTE Y MEDICO LISTOS">
-      <change afterPath="$PROJECT_DIR$/historial-service/src/test/java/cl/duoc/historial_service/HistorialControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/historial-service/src/test/java/cl/duoc/historial_service/HistorialServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/citas-service/src/main/java/cl/duoc/citas_service/CitasServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/citas-service/src/main/java/cl/duoc/citas_service/CitasServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/citas-service/src/main/java/cl/duoc/citas_service/controller/CitaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/citas-service/src/main/java/cl/duoc/citas_service/controller/CitaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/especialidades-service/src/main/java/cl/duoc/especialidades_service/controller/EspecialidadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/especialidades-service/src/main/java/cl/duoc/especialidades_service/controller/EspecialidadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/historial-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/historial-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/HistorialServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/HistorialServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/controller/HistorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/controller/HistorialController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/dto/HistorialDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/dto/HistorialDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/repository/HistorialRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/repository/HistorialRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/service/HistorialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/historial-service/src/main/java/cl/duoc/historial_service/service/HistorialService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medicos-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/medicos-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medicos-service/src/main/java/cl/duoc/medicos_service/MedicosServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/medicos-service/src/main/java/cl/duoc/medicos_service/MedicosServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medicos-service/src/main/java/cl/duoc/medicos_service/controller/MedicoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/medicos-service/src/main/java/cl/duoc/medicos_service/controller/MedicoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones-service/src/main/java/cl/duoc/notificaciones_service/NotificacionesServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notificaciones-service/src/main/java/cl/duoc/notificaciones_service/NotificacionesServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificaciones-service/src/main/java/cl/duoc/notificaciones_service/controller/NotificacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notificaciones-service/src/main/java/cl/duoc/notificaciones_service/controller/NotificacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagos-service/src/main/java/cl/duoc/pagos_service/controller/PagoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pagos-service/src/main/java/cl/duoc/pagos_service/controller/PagoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagos-service/src/main/java/cl/duoc/pagos_service/repository/PagoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pagos-service/src/main/java/cl/duoc/pagos_service/repository/PagoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagos-service/src/main/java/cl/duoc/pagos_service/service/PagoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pagos-service/src/main/java/cl/duoc/pagos_service/service/PagoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recetas-service/src/main/java/cl/duoc/recetas_service/RecetasServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/recetas-service/src/main/java/cl/duoc/recetas_service/RecetasServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recetas-service/src/main/java/cl/duoc/recetas_service/controller/RecetaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/recetas-service/src/main/java/cl/duoc/recetas_service/controller/RecetaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pacientes-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pacientes-service/src/main/java/cl/duoc/pacientes_service/dto/PacienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes-service/src/main/java/cl/duoc/pacientes_service/dto/PacienteDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pacientes-service/src/test/java/cl/duoc/pacientes_service/PacienteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes-service/src/test/java/cl/duoc/pacientes_service/PacienteServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +38,10 @@
     &quot;accountId&quot;: &quot;e5ada967-9781-449f-92a7-c3eea3136205&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -79,45 +64,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.HistorialControllerTest.executor": "Run",
-    "JUnit.HistorialServiceTest.executor": "Run",
-    "JUnit.MedicoControllerTest.executor": "Run",
-    "JUnit.MedicoServiceTest.executor": "Run",
-    "JUnit.PacienteControllerTest.executor": "Run",
-    "JUnit.PacienteServiceTest.executor": "Run",
-    "JUnit.PacientesServiceApplicationTests.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.ApiGatewayApplication.executor": "Run",
-    "Spring Boot.CitasServiceApplication.executor": "Run",
-    "Spring Boot.ConfigServerApplication.executor": "Run",
-    "Spring Boot.EspecialidadesServiceApplication.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.HistorialServiceApplication.executor": "Run",
-    "Spring Boot.MedicosServiceApplication.executor": "Run",
-    "Spring Boot.NotificacionesServiceApplication.executor": "Run",
-    "Spring Boot.PacientesServiceApplication.executor": "Run",
-    "Spring Boot.PagosServiceApplication.executor": "Run",
-    "Spring Boot.RecetasServiceApplication.executor": "Run",
-    "ToolWindow.Terminal.ShowToolbar": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Marti/OneDrive/Desktop/proyecto_hospital",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.HistorialControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HistorialServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MedicoControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MedicoServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PacienteControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PacienteServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PacientesServiceApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CitasServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EspecialidadesServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.HistorialServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MedicosServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NotificacionesServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PacientesServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PagosServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.RecetasServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ToolWindow.Terminal.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Marti/OneDrive/Desktop/proyecto_hospital&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="A:\proyecto_hospital\recetas-service\src\main\java\cl\duoc\recetas_service" />
@@ -139,20 +124,8 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
-    <option name="configurationStatuses">
-      <map>
-        <entry key="SpringBootApplicationConfigurationType">
-          <value>
-            <map>
-              <entry key="EurekaServerApplication" value="STOPPED" />
-              <entry key="PacientesServiceApplication" value="FAILED" />
-            </map>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
-  <component name="RunManager" selected="JUnit.HistorialControllerTest">
+  <component name="RunManager" selected="JUnit.PacienteServiceTest">
     <configuration name="HistorialControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="historial-service" />
       <extension name="coverage">
@@ -213,34 +186,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PacientesServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+    <configuration name="PacienteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pacientes-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cl.duoc.pacientes_service.PacientesServiceApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cl.duoc.pacientes_service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="cl.duoc.pacientes_service" />
+      <option name="MAIN_CLASS_NAME" value="cl.duoc.pacientes_service.PacienteServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PacienteServiceTest" />
         <item itemvalue="JUnit.HistorialControllerTest" />
         <item itemvalue="JUnit.HistorialServiceTest" />
         <item itemvalue="JUnit.MedicoControllerTest" />
         <item itemvalue="JUnit.MedicoServiceTest" />
-        <item itemvalue="Spring Boot.PacientesServiceApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
       </set>
     </attachedChunks>
   </component>
@@ -252,6 +227,7 @@
       <option name="presentableId" value="Default" />
       <updated>1781225033973</updated>
       <workItem from="1781794570405" duration="4095000" />
+      <workItem from="1782939977772" duration="9167000" />
     </task>
     <task id="LOCAL-00001" summary="TEST PACIENTE Y MEDICO LISTOS">
       <option name="closed" value="true" />

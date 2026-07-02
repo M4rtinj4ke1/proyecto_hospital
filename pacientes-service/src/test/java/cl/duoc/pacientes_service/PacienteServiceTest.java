@@ -300,4 +300,16 @@ public class PacienteServiceTest {
         verify(repository).findByEmail("noexiste@email.com");
         verifyNoInteractions(mapper);
     }
+
+    @Test
+    @DisplayName("PacienteDTO - Debe calcular correctamente nombreCompleto y edad")
+    void pacienteDTO_deberiaCalcularNombreCompletoYEdad() {
+        PacienteDTO dto = new PacienteDTO(
+                1L, "12345678-9", "Juan", "González",
+                LocalDate.of(1990, 5, 15), "juan.gonzalez@email.com"
+        );
+
+        assertEquals("Juan González", dto.getNombreCompleto());
+        assertTrue(dto.getEdad() >= 35);
+    }
 }
